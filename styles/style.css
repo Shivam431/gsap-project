@@ -1,0 +1,199 @@
+/* General Styling for Body and Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .home{
+    background-image: url('/assests/homepage.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color:white;
+    height: 100%;
+    
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+  
+  .page-content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+
+  .team-image {
+    width: 150px;         /* Set a fixed size for the profile image */
+    height: 150px;        /* Ensure the height and width are equal to maintain a circle */
+    border-radius: 50%;   /* This rounds the corners to create a circle */
+    object-fit: cover;    /* Ensures the image covers the circle without distortion */
+    border: 3px solid #fff;  /* Optional: Add a border around the profile image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow to make the image pop */
+    transition: transform 0.3s ease; /* Smooth animation on hover */
+  }
+  
+  .team-image:hover {
+    transform: scale(1.05); /* Optional: Zoom effect on hover */
+  }
+  
+  .animate-image{
+    width: 100%;         
+    height: 150px;        
+    object-fit: fill;  
+    border: 3px solid #fff;
+  }
+  /* Image Styling for Contact Section */
+  .image-container {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .additional-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .image-item {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .additional-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding:40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ffd700;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #218838;
+  }
+  
+  .contact-form .error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .success-message {
+    color: #2ecc71;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  
